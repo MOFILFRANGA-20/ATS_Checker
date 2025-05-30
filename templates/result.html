@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ATS Result</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10">
+  <div class="max-w-xl mx-auto bg-white p-8 rounded shadow">
+    <h2 class="text-2xl font-bold mb-4 text-center">Your ATS Score</h2>
+    <div class="text-center text-4xl font-bold text-green-600 mb-4">{{ score }}%</div>
+
+    <h3 class="text-xl font-semibold mb-2">Suggestions:</h3>
+    <ul class="list-disc list-inside text-gray-700">
+      {% for suggestion in suggestions %}
+        <li>{{ suggestion }}</li>
+      {% endfor %}
+    </ul>
+
+    <a href="/" class="block text-center mt-6 text-blue-600 hover:underline">Try Again</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ATS Resume Checker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10">
+  <div class="max-w-xl mx-auto bg-white p-8 rounded shadow">
+    <h1 class="text-2xl font-bold mb-6 text-center">ATS Resume Checker</h1>
+    <form action="/result" method="post" enctype="multipart/form-data">
+      <label class="block mb-2 font-medium">Upload your resume (PDF):</label>
+      <input type="file" name="resume" accept=".pdf" required class="mb-4 p-2 border w-full rounded"/>
+
+      <label class="block mb-2 font-medium">Paste Job Description:</label>
+      <textarea name="job_description" rows="6" required class="mb-4 p-2 border w-full rounded"></textarea>
+
+      <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 w-full">
+        Check ATS Score
+      </button>
+    </form>
+  </div>
+</body>
+</html>
