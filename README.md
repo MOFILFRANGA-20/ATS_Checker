@@ -13,6 +13,7 @@ The ATS Resume Checker is a web-based tool that helps job seekers optimize their
 📂 How It Works
 1. Upload your resume (PDF)
 2. Enter the job title/role you're targeting
+   
 The tool:
   1. Extracts and analyzes resume content
   2. Compares it with role-relevant keywords
